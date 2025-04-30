@@ -20,7 +20,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     env:
-      BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+      # head_ref: source branch name of a PR; null when action isn't a PR.
+      # sha: hash of a commit / merge.
+      INCOMING_CHANGES_REF: ${{ github.head_ref || github.sha }}
     steps:
       - name: Checkout main repo 'dev'
         uses: actions/checkout@v4
@@ -64,17 +66,17 @@ jobs:
       - name: Generate latest screenshots
         run: |
           rm -rf seedsigner-screenshots
-          mkdir -p artifacts/$BRANCH_NAME
+          mkdir -p artifacts/incoming
           python -m pytest tests/screenshot_generator/generator.py
           sleep 10
-          mv ./seedsigner-screenshots/* ./artifacts/$BRANCH_NAME/
+          mv ./seedsigner-screenshots/* ./artifacts/incoming/
       - name: Diff screenshots
         run: |
           mkdir -p artifacts/diff
-          python src/seedsigner/resources/seedsigner-translations/.github/diff_report/diff_screenshots.py ./artifacts/dev ./artifacts/$BRANCH_NAME ./artifacts/diff
+          python src/seedsigner/resources/seedsigner-translations/.github/diff_report/diff_screenshots.py ./artifacts/dev ./artifacts/incoming ./artifacts/diff $INCOMING_CHANGES_REF
       - name: Clean up artifacts
         run: |
-          rm -rf ./artifacts/$BRANCH_NAME
+          rm -rf ./artifacts/incoming
           rm -rf ./artifacts/dev
           mv ./artifacts/diff/* ./artifacts
           rmdir ./artifacts/diff
