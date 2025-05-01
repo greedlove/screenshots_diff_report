@@ -2,9 +2,9 @@
 Utility to compare screenshots before and after a change and generate a report of the
 differences.
 
-Expected usage in a GitHub Actions workflow; compare `dev` with the `$BRANCH_NAME` in the
-associated PR that triggered the CI run:
-python src/seedsigner/resources/seedsigner-translations/.github/diff_report/diff_screenshots.py ./artifacts/dev ./artifacts/$BRANCH_NAME ./artifacts/diff
+Expected usage in a GitHub Actions workflow; compare `dev` with the `$INCOMING_CHANGES_REF` in the
+associated PR or merge that triggered the CI run:
+python src/seedsigner/resources/seedsigner-translations/.github/diff_report/diff_screenshots.py ./artifacts/dev ./artifacts/incoming ./artifacts/diff $INCOMING_CHANGES_REF
 """
 import argparse
 import glob
@@ -16,15 +16,16 @@ import shutil
 
 parser = argparse.ArgumentParser(prog=__name__)
 
-parser.add_argument("before_dir", type=str, help="Directory containing screenshots before the proposed changes")
-parser.add_argument("after_dir", type=str, help="Directory containing screenshots after the proposed changes")
+parser.add_argument("before_dir", type=str, help="Directory containing screenshots before the incoming changes")
+parser.add_argument("after_dir", type=str, help="Directory containing screenshots after the incoming changes")
 parser.add_argument("output_dir", type=str, help="Directory to save the screenshots diff report")
+parser.add_argument("incoming_changes_ref", type=str, help="Branch name or commit hash that contains the incoming changes")
 
 args = parser.parse_args()
 
-# "before" and "after" directories are named: artifacts/$TARGET_BRANCH and artifacts/$BRANCH_NAME
-before_branch_name = args.before_dir.split(os.path.sep)[-1]
-after_branch_name = args.after_dir.split(os.path.sep)[-1]
+# `before_dir` includes the branch name we'll be merging into
+baseline_branch = args.before_dir.split(os.path.sep)[-1]
+incoming_changes_ref = args.incoming_changes_ref
 
 def list_files_recursively(path: str) -> list[str]:
     """ Return a list of paths to all png files in the directory tree """
@@ -91,7 +92,7 @@ for file in list_files_recursively(args.after_dir):
 only_in_before = set(paths_before) - set(paths_after)
 
 html_content = "<h1>Screenshots diff report</h1>"
-html_content += f"""<p>Comparing {before_branch_name} to {after_branch_name}</p>"""
+html_content += f"""<p>Comparing {baseline_branch} to {incoming_changes_ref}</p>"""
 output_dir_before = os.path.join(args.output_dir, "before")
 output_dir_after = os.path.join(args.output_dir, "after")
 os.makedirs(output_dir_before, exist_ok=True)
