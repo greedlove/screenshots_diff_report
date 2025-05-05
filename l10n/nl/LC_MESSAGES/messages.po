@@ -922,14 +922,12 @@ msgstr "Overdracht naar eigen wallet verifiëren..."
 #: src/seedsigner/views/psbt_views.py
 msgid "PSBT's {} address could not be verified from wallet descriptor."
 msgstr ""
-"{}-adres van de PSBT kan niet geverifieerd worden op basis van "
-"walletbeschrijving."
+"{}-adres van de PSBT kan niet geverifieerd worden o.b.v. walletbeschrijving."
 
 #. Variable is either "change" or "self-transfer".
 #: src/seedsigner/views/psbt_views.py
 msgid "PSBT's {} address could not be generated from your seed."
-msgstr ""
-"{}-adres van de PSBT kan niet worden gegenereerd op basis van uw seed."
+msgstr "{}-adres van de PSBT kan niet worden gegenereerd o.b.v. uw seed."
 
 #: src/seedsigner/views/psbt_views.py
 msgid "Suspicious PSBT"
@@ -1141,7 +1139,7 @@ msgstr "Exporteren als SeedQR"
 
 #: src/seedsigner/views/seed_views.py
 msgid "Xpub can be used to view all future transactions."
-msgstr "Xpub kan worden gebruikt om alle toekomstige transacties te bekijken."
+msgstr "Xpub kan worden gebruikt om alle transacties te bekijken."
 
 #: src/seedsigner/views/seed_views.py
 msgid "Generating xpub..."
