@@ -5,8 +5,8 @@
 # 
 # Translators:
 # Keith Mukai, 2022
-# Jean Do, 2025
 # Jp Prudhomme, 2025
+# Jean Do, 2025
 # 
 #, fuzzy
 msgid ""
@@ -326,7 +326,7 @@ msgstr "Détails Xpub"
 #: src/seedsigner/gui/screens/seed_screens.py
 #: src/seedsigner/gui/screens/tools_screens.py
 msgid "Fingerprint"
-msgstr "Empreintes "
+msgstr "Empreinte"
 
 #. Short for "Derivation Path"
 #. a label for the derivation-path into a BIP-32 HD wallet
@@ -436,11 +436,11 @@ msgid ""
 " change address."
 msgstr ""
 "Charger votre descripteur portefeuille multisig pour vérifier votre adresse "
-"de réception/ transfert à soi-même ou monnaie"
+"de réception / transfert à soi-même ou rendu."
 
 #: src/seedsigner/gui/screens/seed_screens.py
 msgid "Descriptor Loaded"
-msgstr "Descriptor chargé"
+msgstr "Descripteur chargé"
 
 #. Label for the multisig wallet's signing policy (e.g. 2-of-3)
 #: src/seedsigner/gui/screens/seed_screens.py
@@ -484,7 +484,7 @@ msgstr "Paramètres"
 #. working properly
 #: src/seedsigner/gui/screens/settings_screens.py
 msgid "I/O Test"
-msgstr "Test Entré/Sortie"
+msgstr "Test Entrée / Sortie"
 
 #. Blank the screen
 #: src/seedsigner/gui/screens/settings_screens.py
@@ -860,8 +860,7 @@ msgstr "Type script non supporté!"
 msgid ""
 "PSBT has unsupported input script type, please verify your change addresses."
 msgstr ""
-"La PSBT a un script d'entrée non supporté. Vérifiez votre adresse de "
-"monnaie."
+"La PSBT a un script d'entrée non supporté. Vérifiez votre adresse de rendu."
 
 #: src/seedsigner/views/psbt_views.py
 msgid "Continue"
@@ -898,7 +897,7 @@ msgstr "Ignorer la vérification"
 
 #: src/seedsigner/views/psbt_views.py
 msgid "Verify Multisig Change"
-msgstr "Vérifier la monnaie Multisig"
+msgstr "Vérifier le rendu Multisig"
 
 #. The amount you're receiving back from the transaction
 #: src/seedsigner/views/psbt_views.py
@@ -1068,7 +1067,7 @@ msgstr "Charger une seed"
 #. Inserts the word number (e.g. "Seed Word #6")
 #: src/seedsigner/views/seed_views.py
 msgid "Seed Word #{}"
-msgstr "Mots seed #{}"
+msgstr "Mot seed #{}"
 
 #: src/seedsigner/views/seed_views.py
 msgid "Review & Edit"
@@ -1332,7 +1331,7 @@ msgstr ""
 
 #: src/seedsigner/views/settings_views.py
 msgid "I/O test"
-msgstr "Test Entrée/Sortie"
+msgstr "Test Entrée / Sortie"
 
 #: src/seedsigner/views/settings_views.py
 msgid "Advanced"
