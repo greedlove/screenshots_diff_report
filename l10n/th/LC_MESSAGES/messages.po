@@ -174,7 +174,7 @@ msgstr "ข้อมูลดิบแบบฐาน16"
 
 #: src/seedsigner/gui/screens/psbt_screens.py
 msgid "Sign PSBT"
-msgstr "ลงนามธุรกรรม PSBT"
+msgstr "เซ็นธุรกรรม PSBT"
 
 #: src/seedsigner/gui/screens/psbt_screens.py
 msgid "Click to approve this transaction"
