@@ -111,7 +111,7 @@ msgstr "ผู้รับที่ {}"
 
 #: src/seedsigner/gui/screens/psbt_screens.py
 msgid "fee"
-msgstr "ค่าบริการ"
+msgstr "ค่าธรรมเนียม"
 
 #. Technical term, should probably NOT be translated in most languages
 #: src/seedsigner/gui/screens/psbt_screens.py
@@ -300,7 +300,10 @@ msgstr "ยืนยันการสำรอง?"
 
 #: src/seedsigner/gui/screens/seed_screens.py
 msgid "Optionally verify that your mnemonic backup is correct."
-msgstr "ตรวจสอบคำช่วยจำที่สำรองไว้ได้อีกครั้ง หากต้องการ "
+msgstr ""
+"ตรวจสอบคำช่วยจำ\n"
+"ที่สำรองไว้ได้อีกครั้ง\n"
+"หากต้องการ "
 
 #: src/seedsigner/gui/screens/seed_screens.py
 msgid "Derivation Path"
@@ -795,7 +798,9 @@ msgstr "ลงลายเซ็นข้อความ"
 
 #: src/seedsigner/models/settings_definition.py
 msgid "Show privacy warnings"
-msgstr "แสดงคำเตือนเกี่ยวกับความเป็นส่วนตัว"
+msgstr ""
+"แสดงคำเตือน\n"
+"เกี่ยวกับความเป็นส่วนตัว"
 
 #: src/seedsigner/models/settings_definition.py
 msgid "Show dire warnings"
@@ -1249,7 +1254,9 @@ msgstr "SeedQR คือกุญแจส่วนตัวของคุณ !
 #: src/seedsigner/views/seed_views.py
 msgid ""
 "Never photograph or scan it into a device that connects to the internet."
-msgstr "ห้ามถ่ายรูปหรือสแกนลงในอุปกรณ์ที่ออนไลน์เด็ดขาด"
+msgstr ""
+"ห้ามถ่ายรูปหรือสแกน\n"
+"ลงในอุปกรณ์ที่ออนไลน์"
 
 #: src/seedsigner/views/seed_views.py
 msgid "Confirm SeedQR"
@@ -1332,7 +1339,9 @@ msgstr "เปิดใช้งานการตั้งค่าคงอย
 
 #: src/seedsigner/views/settings_views.py
 msgid "Settings updated in temporary memory"
-msgstr "อัปเดตการตั้งค่าในหน่วยความจำชั่วคราวแล้ว"
+msgstr ""
+"อัปเดตการตั้งค่า\n"
+"ในหน่วยความจำชั่วคราวแล้ว"
 
 #: src/seedsigner/views/tools_views.py
 msgid "New seed"
