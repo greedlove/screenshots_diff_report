@@ -19,7 +19,6 @@ Create an account on github.com if you haven't already.
 
 In order to submit a change, you'll need your own copy of the `screenshots_diff_report` repo. Make sure you're signed in to your github account and then:
 * Go to the [screenshots diff_report repo](https://github.com/greedlove/screenshots_diff_report)
-* Click the green **"Code"** button.
 * Click "Fork" at the top right.
 
 <img width="600" alt="Screenshot 2568-09-24 at 10 07 28" src="https://github.com/user-attachments/assets/43b89269-87e7-4292-873f-0b05c454f298" /><br/>
