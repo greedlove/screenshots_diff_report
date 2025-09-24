@@ -137,16 +137,15 @@ Repeat this process as many times as necessary until you're satisified with all 
 
 ### How to View Your PR and Check the Automated Results
 
-Once you’ve created a Pull Request (PR), you can view it by going to the "Pull Requests" tab at the top of the repository.
-
-<img width="1432" alt="Screenshot 2568-09-24 at 10 49 14" src="https://github.com/user-attachments/assets/9cd2de6a-e57e-4034-9c45-93e0fa1eafc1" /><br />
-
+Once you’ve created a Pull Request (PR), you can view it by going to the "Pull Requests" tab at the top of the repository.<br />
 Go to the [screenshots diff_report repo](https://github.com/greedlove/screenshots_diff_report)
 
-<img width="1315" alt="Screenshot 2568-09-24 at 10 50 15" src="https://github.com/user-attachments/assets/4ba36a8b-9793-4806-bec9-21c3fd280ccf" /><br />
+<img width="1432" alt="Screenshot 2568-09-24 at 10 49 14" src="https://github.com/user-attachments/assets/9cd2de6a-e57e-4034-9c45-93e0fa1eafc1" /><br />
 
 When you open your PR, you’ll see a section showing the results of our automated checks — these might include things like build status, tests, screenshot generation, etc.
 
 ✅ If all checks pass, they’ll appear in green, and your PR is good to go.
 
 ❌ If any check fails, it will appear in red, and you can click into it to see what went wrong and how to fix it.
+
+<img width="1315" alt="Screenshot 2568-09-24 at 10 50 15" src="https://github.com/user-attachments/assets/4ba36a8b-9793-4806-bec9-21c3fd280ccf" /><br />
