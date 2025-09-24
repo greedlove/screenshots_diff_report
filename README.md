@@ -14,68 +14,17 @@ Create an account on github.com if you haven't already.
 * IMPORTANT: Rename the downloaded file to: `messages.po`
 
 ---
-### Clone the `greedlove/seedsigner-translations` repo
+### Fork the `greedlove/screenshots_diff_report` repo
+(skip this step if you've already forked it)
 
-In order to submit a change, you'll need your own copy of the `seedsigner-translations` repo. Make sure you're signed in to your github account and then:
-* Go to the [translations repo](https://github.com/greedlove/seedsigner-translations)
+In order to submit a change, you'll need your own copy of the `screenshots_diff_report` repo. Make sure you're signed in to your github account and then:
+* Go to the [screenshots diff_report repo](https://github.com/greedlove/screenshots_diff_report)
 * Click the green **"Code"** button.
-* Under **"Clone"**, make sure you're using the **HTTPS** tab (or SSH if you've set it up).
-* Copy the URL shown (e.g., `https://github.com/greedlove/seedsigner-translations.git`)
+* Click "Fork" at the top right.
 
-<img width="600" alt="Screenshot 2568-09-23 at 21 02 52" src="https://github.com/user-attachments/assets/1bbc51b5-6ea4-40ec-956b-8621388b77fd" /><br/>
+<img width="600" alt="Screenshot 2568-09-24 at 10 07 28" src="https://github.com/user-attachments/assets/43b89269-87e7-4292-873f-0b05c454f298" /><br/>
 
-Open Your Terminal or Command Prompt : use your terminal (on macOS/Linux) or Command Prompt (on Windows) and then:
-
- - Navigate to the Directory Where You Want the Project
-```bash
-cd path/to/your/folder
-```
-
- - Clone the Repository : Paste the URL you copied after the `git clone` command:
-```shell
-git clone https://github.com/greedlove/seedsigner-translations.git
-```
-
-- Enter the Project Directory : After cloning, go into the project folder:
-```bash
-cd seedsigner-translations
-```
-
----
-### Push an Existing Repository to a New GitHub Repository (Step-by-Step)
-
-After cloning or working on a local Git repository, you may want to push it to a **new GitHub repository**. Here’s how to do it:
-
-#### **Step 1: Create a New Repository on GitHub**
-
-1. Go to [https://github.com](https://github.com)
-2. In the top-right corner, click the **"+" icon** > **"New repository"**
-3. Set the repository name, e.g., `screenshots_diff_report`
-4. **Do NOT initialize with a README**, `.gitignore`, or license if you're pushing an existing local repository
-5. Click **"Create repository"**
-
-Your new repository URL will look something like:
-- HTTPS: `https://github.com/your-username/screenshots_diff_report.git`
-- SSH: `git@github.com:your-username/screenshots_diff_report.git`
-
-#### **Step 2: Push an Existing Repository from the Command Line**
-
-If you already have a local Git repository that you want to push to this new GitHub repository, follow these steps in your terminal:
-
-```bash
-# Set the remote URL to your new GitHub repository
-git remote set-url origin git@github.com:your-username/screenshots_diff_report.git
-
-# Rename the current branch to 'main' (optional but recommended)
-git branch -M main
-
-# Push the code to GitHub and set the upstream
-git push -u origin main
-```
-
-Replace `your-username` with your actual GitHub username.
-#### Done!
-Now your local repository is connected to the GitHub remote, and the code is uploaded to the new GitHub repository.
+Leave all the defaults as they are and proceed with creating the fork.
 
 ---
 ### Upload your changes to your fork
@@ -83,33 +32,54 @@ Your browser url should now be: github.com/<your_username>/screenshots_diff_repo
 
 Click into the `l10n/<language_code>/LC_MESSAGES` folder.
 
-`<language_code>` will be "th" for Thai, "pt_BR" for Brazilian Portuguese, etc.
+`<language_code>` will be "th" for Thai.
 
 You should see a messages.po file. In the upper right click "Add file" and choose "Upload files":
 
-<img width="600" alt="402710396-807a1b2d-8df8-4a3e-b671-49c72a903ede" src="https://github.com/user-attachments/assets/ca2f57e3-3361-4ea1-9632-7af7559e87fe" /><br/>
+<img width="1430" alt="Screenshot 2568-09-24 at 10 13 45" src="https://github.com/user-attachments/assets/a6c9357b-b392-4a84-83d7-e67af925639b" /><br/>
 
 Verify that the following screen is listing the correct directory (you should be within the LC_MESSAGES folder for your language!):
 
-<img width="800" alt="Screenshot 2568-09-23 at 21 31 44" src="https://github.com/user-attachments/assets/699923d8-5369-4ba0-abb8-ab008ddf90d0" />
+<img width="800" alt="Screenshot 2568-09-24 at 10 19 16" src="https://github.com/user-attachments/assets/f9aa5871-e2ea-41fb-a1bf-4bb8ad68b576" />
 
 * Click to upload your `messages.po` file.
-* Select "Commit directly to the main branch"
-* Click "Commit changes".
+* Select "Create a new branch for this commit and start a pull request."
+* Name your new branch with the language code and date: e.g. `es_2025-09-24`
+* Click "Propose changes".
+
+On the following screen we will finalize your Pull Request (PR):
+
+<img width="800" alt="Screenshot 2568-09-24 at 10 25 51" src="https://github.com/user-attachments/assets/6f286c16-0e05-4dff-9fa7-e418dd6c5443" /><br />
+
+* Click on "compare across forks". That will alter the "base repository" droplist options.
+* Select "greedlove/screenshots_diff_report" as the "base repository".
+  * Its "main" branch should already automatically be selected.
+* Add a title that includes the language code and (optional) additional context/info.
+* Scroll down and review the diff at the bottom.
+  * If you spot any translations issues, you can only fix them back in Transifex. After any issues are fixed, you'll have to download the `messages.po` file and repeat this process.
+* Click "Create pull request" when you're ready.
 
 ---
 ### Review new/updated screenshots
 Once it is created, you'll see the results of our automated checks:
 
-<img width="612" alt="439648126-1970d974-4241-4155-923f-ff637cc5f84f" src="https://github.com/user-attachments/assets/356cedbe-aaa1-4ee5-8517-5b2f476c92fc" />
+<img width="1317" alt="Screenshot 2568-09-24 at 10 30 30" src="https://github.com/user-attachments/assets/8c43a1d1-0db5-46c5-8f0d-cde9f08a746e" /><br />
+
+Once those checks are complete, you'll see the results displayed below the PR.
+
+✅ If everything goes well, all checks will pass and show up in green, which means the PR is ready for downloading screenshots.
+
+❌ If something goes wrong, one or more checks will fail and show up in red. In that case, we’ll need to review the errors, fix the issues, and push an update before the PR can proceed.
+
+<img width="1256" alt="Screenshot 2568-09-24 at 10 40 45" src="https://github.com/user-attachments/assets/470f695f-7183-44c9-9fca-67be76d6d46a" /><br />
 
 Click into "All checks have passed" to reveal the "CI / test (pull_request)" line. Click on that to view the details.
 
-<img width="853" alt="439648979-c87861ea-5f82-4439-adc7-9900c3943a9c" src="https://github.com/user-attachments/assets/bf186057-30c5-46dc-931f-1809e34417ac" />
+<img width="821" alt="Screenshot 2568-09-24 at 10 43 07" src="https://github.com/user-attachments/assets/df0eeea0-01d3-4cfc-a62e-66fc6b459c3b" /><br />
 
 Click "Summary" and scroll down to the "Artifacts" section:
 
-<img width="1025" alt="439649382-3bcb1b0e-dd7e-4944-a728-af8cacc91d6f" src="https://github.com/user-attachments/assets/45640725-b729-4c6e-9500-3ca7d93e0650" />
+<img width="1044" alt="Screenshot 2568-09-24 at 10 43 37" src="https://github.com/user-attachments/assets/96fd3506-6776-4db5-8242-ce54fd85953f" /><br />
 
 Click the download arrow to download a zip file of the results.
 
@@ -164,3 +134,19 @@ At this point the automated system will re-run itself and generate a new Screens
 Repeat this process as many times as necessary until you're satisified with all screens in the Screenshot Diff Report.
 
 ---
+
+### How to View Your PR and Check the Automated Results
+
+Once you’ve created a Pull Request (PR), you can view it by going to the "Pull Requests" tab at the top of the repository.
+
+<img width="1432" alt="Screenshot 2568-09-24 at 10 49 14" src="https://github.com/user-attachments/assets/9cd2de6a-e57e-4034-9c45-93e0fa1eafc1" /><br />
+
+Go to the [screenshots diff_report repo](https://github.com/greedlove/screenshots_diff_report)
+
+<img width="1315" alt="Screenshot 2568-09-24 at 10 50 15" src="https://github.com/user-attachments/assets/4ba36a8b-9793-4806-bec9-21c3fd280ccf" /><br />
+
+When you open your PR, you’ll see a section showing the results of our automated checks — these might include things like build status, tests, screenshot generation, etc.
+
+✅ If all checks pass, they’ll appear in green, and your PR is good to go.
+
+❌ If any check fails, it will appear in red, and you can click into it to see what went wrong and how to fix it.
