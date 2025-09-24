@@ -43,7 +43,7 @@ Verify that the following screen is listing the correct directory (you should be
 
 * Click to upload your `messages.po` file.
 * Select "Create a new branch for this commit and start a pull request."
-* Name your new branch with the language code and date: e.g. `es_2025-09-24`
+* Name your new branch with the language code and date: e.g. `th_2025-09-24`
 * Click "Propose changes".
 
 On the following screen we will finalize your Pull Request (PR):
@@ -60,7 +60,7 @@ On the following screen we will finalize your Pull Request (PR):
 
 ---
 ### Review new/updated screenshots
-Once it is created, you'll see the results of our automated checks:
+Once it is created, you'll see the results of automated checks:
 
 <img width="1317" alt="Screenshot 2568-09-24 at 10 30 30" src="https://github.com/user-attachments/assets/8c43a1d1-0db5-46c5-8f0d-cde9f08a746e" /><br />
 
