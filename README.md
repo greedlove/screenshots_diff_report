@@ -126,11 +126,16 @@ If a screenshot does reveal a problematic translation, make your translation edi
 
 Follow the same steps from "Upload your changes to your repo" above to navigate to the proper folder and then "Upload files". Once again, select your `messages.po` file.
 
+<img width="1293" height="742" alt="Screenshot 2568-09-25 at 12 45 48" src="https://github.com/user-attachments/assets/902ccf1c-e9c7-45d2-93fd-1739d64c252a" /><br />
+
+** Commit directly to the your_branch_name branch.
+
 This will be treated as an additional commit on top of the one you did earlier. Once the updated file is committed, your repo will automatically include the latest changes.
 
 At this point the automated system will re-run itself and generate a new Screenshot Diff Report for you to download and review.
 
 Repeat this process as many times as necessary until you're satisified with all screens in the Screenshot Diff Report.
+
 
 ---
 
