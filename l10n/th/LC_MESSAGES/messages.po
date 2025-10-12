@@ -562,7 +562,7 @@ msgid ""
 " auto-calculated checksum."
 msgstr ""
 "คำที่ {mnemonic_length} สร้างจากบิตเอนโทรปีเพิ่มเติมอีก {num_bits} บิต "
-"พร้อมกับ checksum ที่คำนวณให้อัตโนมัติ"
+"พร้อมกับ Checksum ที่คำนวณให้อัตโนมัติ"
 
 #. current coin-flip number vs total flips (e.g. flip 3 of 4)
 #: src/seedsigner/gui/screens/tools_screens.py
@@ -1087,8 +1087,8 @@ msgstr "ชุดคำกู้คืนไม่ถูกต้อง"
 #: src/seedsigner/views/seed_views.py
 msgid "Checksum failure; not a valid seed phrase."
 msgstr ""
-"ชุดคำช่วยจำไม่ถูกต้อง\n"
-"checksum ผิด"
+"ชุดคำกู้คืนไม่ถูกต้อง\n"
+"Checksum ผิดพลาด"
 
 #: src/seedsigner/views/seed_views.py
 msgid "Edit passphrase"
