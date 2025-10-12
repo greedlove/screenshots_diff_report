@@ -932,8 +932,8 @@ msgstr ""
 #: src/seedsigner/views/psbt_views.py
 msgid "PSBT's {} address could not be generated from your seed."
 msgstr ""
-"ไม่สามารถสร้างที่อยู่{} \n"
-"จาก Seed ของคุณได้"
+"ไม่สามารถสร้างที่อยู่ \n"
+"{} จาก Seed ได้"
 
 #: src/seedsigner/views/psbt_views.py
 msgid "Suspicious PSBT"
@@ -966,8 +966,8 @@ msgstr "การเซ็นล้มเหลว"
 #: src/seedsigner/views/psbt_views.py
 msgid "Signing with this seed did not add a valid signature."
 msgstr ""
-"การเซ็นด้วย Seed นี้\n"
-"ไม่สามารถสร้างลายเซ็นที่ถูกต้องได้"
+"Seed นี้ไม่สามารถ\n"
+"สร้างลายเซ็นที่ถูกต้องได้"
 
 #: src/seedsigner/views/scan_views.py
 msgid "Scan a QR code"
@@ -1308,7 +1308,7 @@ msgstr "SeedQR ที่ป้อนมา ไม่สามารถอ่า�
 
 #: src/seedsigner/views/seed_views.py
 msgid "Sig type can't be auto-detected from this address. Please specify:"
-msgstr "ไม่รู้ประเภทลายเซ็นจากที่อยู่นี้ โปรดระบุ:"
+msgstr "ไม่รู้ประเภทลายเซ็นจากที่อยู่นี้ โปรดระบุ"
 
 #. Option when scanning for a matching address; skips ten addresses ahead
 #: src/seedsigner/views/seed_views.py
